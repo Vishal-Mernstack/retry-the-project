@@ -8,6 +8,7 @@ import AppLayout from "@/components/layout/AppLayout";
 import Index from "./pages/Index";
 import UploadPage from "./pages/UploadPage";
 import ChatPage from "./pages/ChatPage";
+import DataTablePage from "./pages/DataTablePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/upload" element={<UploadPage />} />
               <Route path="/chat" element={<ChatPage />} />
+              <Route path="/data" element={<DataTablePage />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>
